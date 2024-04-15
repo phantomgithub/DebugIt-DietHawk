@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    padding:0;
+}
+.hidden{
+    display: none;
+
+}
+
+.main-planner{
+    
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#f9cc69;
+
+}
+#main-heading{
+    color:#24202D;
+    font-size:4rem;
+    text-align: center;
+    margin-top:2rem;
+}
+#info{
+    color:#24202D;
+    font-size:2rem;
+    text-align: center;
+}
+.type-selector{
+    margin-top:5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:75rem;
+    padding: 1rem 1rem 0rem 1rem;
+    width:60vw;
+    background-color:#ff815a;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
+border-radius: 5px;;
+}
+.diet-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.diet-types{
+   height:5rem;
+   width:7.5vw;
+    margin:1rem;
+    background-color:white;
+    color:blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;;
+
+}
+.diet-types:hover{
+    background-color: rgb(95, 232, 237);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
+    color: white;
+
+}
+.input-calories{
+    display: flex;
+    margin-top:5rem;
+}
+.ingr-input{
+    display: flex;
+    margin-top:2rem;
+}
+#ingr-input-text{
+    height: 2rem;
+    outline: none;
+    border: none;
+    width:15rem;
+    border-radius: 3px;
+}
+
+#calory-input{
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+#label-calory{
+    color: white;
+    font-size: 1.5rem;
+    margin-right:1rem;
+}
+.submit-button{
+    background-color:#eccb68da;
+    width:15rem;
+    height: 3rem;
+    color:white;
+    margin-top:5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
+  border-radius:5px;
+}
+#time{
+ color: white;
+ position: relative;
+  margin-top:1rem;
+  text-align: center;
+  font-size: 1.2rem;   
+}
+.loader{
+    width:70vw;
+    margin-top:2rem;
+    height: 135vh;
+    background: pink;
+    position: absolute;
+   margin-left:15%;
+}
+.hidden{
+    visibility: hidden;
+}
+.show{
+    visibility: visible;
+}
+.result{
+    height:auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:0.5px solid transparent;
+    background-color: #f9cc69;
+}
+.result-container{
+    width:80vw;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.breakfastcontainer ,.lunchcontainer,.dinnercontainer{
+    width:100%;
+    /* height: 40vh; */
+    height: auto;
+    padding:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.breakfast-result,.lunch-result,.dinner-result{
+    height:80%;
+    /* padding:1rem 1rem 0 1rem; */
+    width:70%;
+    border-radius:10px;
+    margin:2rem;
+    margin-top:2rem;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
+
+}
+#b1,#b2,#l2,#l1,#d1,#d2{
+    width:30%;
+    height: 100%;
+    aspect-ratio: 4/3;
+    outline: none;
+    border: 1px transparent;
+}
+.details{
+    height: 50%;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    margin-left:2rem;
+    
+}
+.submit-button:hover{
+    background-color:#24202D;
+    
+    transition: 0.2s ease;;
+}
+#break-title,#lunch-title,#dinner-title{
+    font-size:1.2rem;
+    font-family:'Mulish' sans-serif ;
+    color:#24202D;
+}
+h3{
+    font-size:0.8rem;
+    font-family:'Mulish' sans-serif ;
+    color:#24202d9d;
+}
+@media (max-width:600px){
+    #main-heading{
+        font-size:3rem;
+    }
+    #info{
+        font-size:1.2rem;
+        width:70%;
+    }
+    .type-selector{
+        height: 25rem;
+        width:65vw;
+    }
+    .diet-types{
+        height: 3rem;
+        width: 8vw;
+        font-size:0.4rem;
+    }
+    .diet-logo{
+        height: 16px;
+        width: 16px;
+    }
+    #label-calory{
+        font-size: 1rem;
+    }
+    .breakfastcontainer,.lunchcontainer,.dinnercontainer{
+        margin-top:0.1rem;
+    }
+    #break-title,#lunch-title,#dinner-title{
+        font-size:0.8rem;
+    }
+    h3{
+        font-size:0.5rem;
+    }
+}
+@media (max-width:990px){
+    #main-heading{
+        font-size:3.2rem;
+    }
+    #info{
+        font-size:1.5rem;
+        width:70%;
+    }
+    .type-selector{
+        height: 30rem;
+        width:67vw;
+    }
+    .diet-types{
+        height: 3.2rem;
+        width: 8.2vw;
+        font-size:0.6rem;
+    }
+    .diet-logo{
+        height: 20px;
+        width: 20px;
+    }
+    #label-calory{
+        font-size: 1.4rem;
+    }
+    .breakfastcontainer,.lunchcontainer,.dinnercontainer{
+        margin-top:0.1rem;
+    }
+    #break-title,#lunch-title,#dinner-title{
+        font-size:1rem;
+    }
+    h3{
+        font-size:0.7rem;
+    }
+}

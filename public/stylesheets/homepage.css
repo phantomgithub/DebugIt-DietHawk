@@ -1,0 +1,278 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: "Mulish", sans-serif;
+}
+body{
+  height: auto;
+}
+.logo-image{
+  width: 500px;
+  height: 300px;
+}
+
+.main{
+  height:80vh;
+  width:100%;
+  background-color: #f9cc69;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container{
+  width:50vw;
+  height:30vh;
+  background-color: #f9cc69;
+  text-align: center;
+}
+#herohead{
+  color: #230d4d;
+  font-size: 2.5rem;
+}
+#card-container
+{
+  width:100%;
+  height:50vh;
+  background-image: url('../images/bg.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+#food-add-msg{
+  font-size:3rem;
+  color:whitesmoke;
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+}
+a{
+  text-decoration: none;
+}
+#textbox{
+  position: relative;
+  margin-top:4rem;
+  height: 3rem;
+   width: 25rem;
+   border-radius: 10px 0 0 10px;
+   outline: none;
+   border: none;
+   padding-left:1rem;
+}
+.wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  height:3rem;
+  width:2.5rem;
+  position: relative;
+margin-top:4rem;
+outline: none;
+  border: none;
+  color: #230d4d;
+  background-color: #f9cc69;
+  font-size: 1rem;;
+}
+#submit-button{
+  border-radius: 0 10px 10px 0;
+  height:3rem;
+  width:2.5rem;
+  
+}
+button:hover{
+  background-color: white;
+  transition: 0.2s ease;
+  color:#f9cc69;
+}
+#optionContain{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width:50vw;
+  margin-top: 2rem;
+  }
+  .grid-items
+  {
+    margin-top: 1rem;
+    margin-left:0.5rem;
+    border-radius:10px;
+    background-color:#f9cc69;
+    color: #230d4d;
+    font-family: "Cabin",sans-serif;
+    text-align: center;
+    height:30px;
+    text-transform: capitalize;
+  }
+  .food-response-section
+  {
+    width: 100%;
+    min-height:40vh;
+    background-color:#24202D;
+    border-top: 1px solid transparent;
+  }
+  .food-grid-con{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width:100%;
+    justify-content: center;
+  }
+  .food-response-display
+  {
+    
+    margin: 2rem;
+ width:15rem;   
+    height: 18rem;
+    background-color: #151529;
+    padding: 1rem;
+    border-radius:0.7rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
+
+  }
+  .food-response-image-container{
+    width:100%;
+    height: 10rem;
+    overflow: hidden;
+  }
+  .image{
+    width: 100%;
+    height: auto;
+  
+
+  }
+  .response-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:0.5rem;
+  }
+  .food-response-data-container{
+    margin-top:1rem;
+  }
+  .value-wrapper{
+    display: flex;
+    
+  }
+  #calory-symbol{
+    color:orange;
+    
+  }
+  .symbol{
+    margin-right:0.5rem;
+  }
+  .hide{
+    display: none;
+  }
+  .skeleton{
+    
+    animation: skeleton-loading 1s linear infinite alternate;
+  }
+  @keyframes skeleton-loading{
+    0%{
+      background-color:#24202D;
+    }
+    100%{
+      background-color:#151529;
+    }
+  }
+@media (max-width:992px){
+  #herohead{
+    color: #230d4d;
+    font-size: 2.2rem;
+  }
+  #card-container{
+    height:45vh;
+  }
+  #food-add-msg{
+    font-size:2.7rem;
+  }
+  #textbox{
+    margin-top:3.7rem;
+    height: 2.7rem;
+    width:20rem;
+  }
+  button{
+    height: 2.7rem;
+    width:2.2rem;
+    margin-top:3.7rem;
+  }
+  #submit-button{
+    border-radius: 0 10px 10px 0;
+    height:2.7rem;
+    width:2.2rem;
+    
+  }
+  .food-response-display
+  {
+    
+    margin: 1.7rem;
+ width:12rem;   
+    height: 15rem;
+    background-color: #151529;
+    padding: 0.7rem;
+    border-radius:0.7rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
+
+  }
+  .food-response-image-container{
+    width:100%;
+    height: 7rem;
+    overflow: hidden;
+  }
+}
+  @media(max-width:600px){
+    .food-grid-con{
+      grid-template-columns: auto auto;
+    }
+    #optionContain{
+      margin-top: 1rem;;
+    }
+    #food-add-msg{
+      font-size: 1.5rem;
+      width:70%;
+    }
+     #herohead{
+    color: #230d4d;
+    font-size: 1.7rem;
+  }
+  #card-container{
+    height:45vh;
+  }
+  #food-add-msg{
+    font-size:2.2rem;
+  }
+  #textbox{
+    margin-top:3.7rem;
+    height: 2.7rem;
+    width:17rem;
+  }
+  button{
+    height: 2.7rem;
+    width:1.7rem;
+    margin-top:3.7rem;
+  }
+  #submit-button{
+    border-radius: 0 10px 10px 0;
+    height:2.7rem;
+    width:1.7rem;
+    
+  }
+  .food-response-display
+  {
+    
+    margin: 1.7rem;
+ width:10rem;   
+    height: 13rem;
+    background-color: #151529;
+    padding: 0.7rem;
+    border-radius:0.7rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
+
+  }
+  .food-response-image-container{
+    width:100%;
+    height: 7rem;
+    overflow: hidden;
+  }
+  }
