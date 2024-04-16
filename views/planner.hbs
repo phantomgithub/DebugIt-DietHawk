@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/planner.css">
+    <link rel="stylesheet" href="/stylesheets/homepage.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav id="nav">
+          <ul>
+            <a href="/"><li>Home</li></a>
+            
+            <a href="/sign-in"><li>Sign in</li></a>
+            <a href="/log-in"><li>log in</li></a>
+
+            
+          </ul>
+        </nav>
+       
+      </header>
+    <section class="main-planner">
+        <h1 id="main-heading">Lets Plan your Meals</h1>
+          <p id="info">Input the Calories and type of meals and Get your meals planned</p>
+        
+        <div class="type-selector">
+            <div class="diet-container">
+            <div class="diet-types" id="1" onclick="option(1)"><img width="56" height="56" src="https://img.icons8.com/fluency/48/vegetarian-mark.png" alt="vegetarian-mark"/>vegetarian</div>
+            <div class="diet-types" id="2" onclick="option(2)"><img width="56" height="56" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-keto-dieting-flaticons-flat-flat-icons-2.png" alt="external-keto-dieting-flaticons-flat-flat-icons-2"/>keto-friendly</div>
+            <div class="diet-types" id="3" onclick="option(3)"><img width="56" height="56" src="https://img.icons8.com/cute-clipart/64/vegan-food.png" alt="vegan-food"/>vegan</div>
+            <div class="diet-types" id="4" onclick="option(4)"><img width="56" height="56" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-high-fiber-dieting-flaticons-flat-flat-icons.png" alt="external-high-fiber-dieting-flaticons-flat-flat-icons"/>high-fiber</div>
+            <div class="diet-types" id="5" onclick="option(5)"><img width="56" height="56"  src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-low-carb-diet-vegan-and-vegetarian-flaticons-flat-flat-icons-2.png" alt="external-low-carb-diet-vegan-and-vegetarian-flaticons-flat-flat-icons-2"/>low-carb</div>
+            </div>       
+            <div class="input-calories"><p id="label-calory">Input Calories</p><input type="number" name="calories" id="calory-input"></div>
+            <div class="submit-button" id="submit" onclick="add()"><p id="time">Get Plan</p></div>
+
+        </div>    
+    
+    </section>
+    {{!-- <div class="loader hidden"></div> --}}
+    <section class="result">
+        <div class="result-container">
+            <div class="breakfastcontainer">
+                <div class="breakfast-result"><img id="b1"><div class="details"><h2 id="break-title"></h2><h3 id="break-cals"></h3><h3 id="break-serve"></h3></div></div>
+                
+                </div>
+            <div class="lunchcontainer">
+                <div class="lunch-result"><img id="l1"><div class="details"><h2 id="lunch-title"></h2><h3 id="lunch-cals"></h3><h3 id="lunch-serve"></h3></div></div>
+            </div>
+            <div class="dinnercontainer">
+                <div class="dinner-result"><img id="d1"><div class="details"><h2 id="dinner-title"></h2><h3 id="dinner-cals"></h3><h3 id="dinner-serve"></h3></div></div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/javascripts/planner.js"></script>
+</html>
