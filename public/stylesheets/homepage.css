@@ -7,8 +7,9 @@ body{
   height: auto;
 }
 .logo-image{
-  width: 500px;
-  height: 300px;
+   aspect-ratio: 4/3;
+  width: 20rem;
+  height: 10rem;
 }
 
 .main{
